@@ -31,39 +31,6 @@ button{
 }
 </style>
 <script type="text/javascript" src="../../script/advertiseScript.js"></script>
-<script type="text/javascript">
-function checkWrite(){
-	var frm = document.advertiseForm;
-	
-	if(!frm.ad_subject.value){
-		alert("공고 제목을 입력해주세요")
-		frm.ad_subject.focus();
-	}else if(!frm.ad_content.value){
-		alert("공고 내용을 입력해주세요")
-		frm.ad_content.focus();
-	}else if(!frm.image.value){
-		alert("사진을 넣어주세요")
-		frm.image.focus();
-	}else if(frm.numselect.value == "0"){
-		alert("인원수중 하나를 선택해주세요.");
-		frm.numselect.focus();
-	}else if(frm.ad_time.value == "0"){
-		alert("시간중 하나를 선택해주세요.");
-		frm.ad_time.focus();
-    }else if(!frm.ad_area.value){
-		alert("위치(지역)을 입력해주세요")
-		frm.ad_area.focus();
-	}else if(frm.ad_job.value == "00"){
-		alert("직종중 하나를 선택해주세요.");
-		frm.ad_job.focus();
-	}else if(!frm.salary.value){
-		alert("시급을 입력해주세요")
-		frm.salary.focus();
-    }else {		
-		frm.submit();
-	}
-}
-</script>
 </head>
 <body id="RegistStep" class="registStep">
 	<div id="Global">
@@ -141,7 +108,6 @@ function checkWrite(){
 							<div class="searchValue regist__item">
 								<input type="text" name="ad_num" size="5"> (명)
 								<select name="numselect" onchange="change();" >
-									<option value="0">--선택해주세요.--</option>
 									<option value="direct">직접입력</option>
 									<option value="00">인원미정</option>
 								</select>
@@ -168,8 +134,7 @@ function checkWrite(){
 							<div class="regist__title"><strong>근무 시간</strong></div>
 							<div class="searchValue regist__item">
 								<select name="ad_time">
-									<option value="0">--선택해주세요.--</option>
-									<option value="00">무관</option>
+									<option value="0">무관</option>
 									<option value="9">오전9-오후6</option>
 									<option value="6">오후12-오후6</option>
 									<option value="7">오후3-오후10</option>
@@ -195,7 +160,6 @@ function checkWrite(){
 							<div class="regist__title"><strong>직종</strong></div>
 							<div class="searchValue regist__item">
 								<select name="ad_job">
-									<option value="00">--선택해주세요.--</option>
 									<option value="주방보조설거지">주방보조설거지</option>
 									<option value="서빙">서빙</option>
 									<option value="전단지배포">전단지배포</option>

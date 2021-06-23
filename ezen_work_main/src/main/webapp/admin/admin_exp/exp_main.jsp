@@ -51,7 +51,7 @@ body{
 			<br><br>
 			<input type="text" class="subject" name="top_subject" style="height: 38px;" placeholder="제목 or 내용">					
 			<a href="#"><button type="button" class="btn btn-outline-success" style="margin-bottom: 5px;" onclick="search();">검색</button></a><br><br>
-			<c:if test="${amemId != null or memId != null }">
+			<c:if test="${memId != null}">
 				<a href="exp_write.jsp"><button type="button" class="btn btn-outline-success" style="margin-right: 900px;">
 					글쓰기
 				</button>

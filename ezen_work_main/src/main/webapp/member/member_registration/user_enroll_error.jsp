@@ -6,13 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
-	if(${result > 0}){
-		alert("공고가 삭제되었습니다.");	
-
-	} else {
-		alert("공고 삭제 실패하였습니다.");
-	}
-	location.href="../../main/index.do";
+	alert("사용중인 아이디입니다.");
+	history.back();
 </script>
 </head>
 <body>

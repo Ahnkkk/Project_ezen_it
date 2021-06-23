@@ -38,6 +38,7 @@ function modify() {
 	}
 }
 </script>
+
 <link rel="stylesheet" href="../css/memberWrite.css">
 </head>
 <body id="ChangePerson" class="ALBA change person">

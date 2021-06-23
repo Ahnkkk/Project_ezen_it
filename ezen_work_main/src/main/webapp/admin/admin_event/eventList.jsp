@@ -58,8 +58,6 @@ body{
 		</div>	
 		<br><br>	
 		<div id="header">			
-			<input type="text" class="subject" name="top_subject" style="height: 38px;" placeholder="제목 or 내용">					
-			<a href="#"><button type="button" class="btn btn-outline-success" style="margin-bottom: 5px;" onclick="search();">검색</button></a><br><br>
 			<c:if test="${amemId != null}">
 				<a href="../admin_event/eventWriteForm.jsp"><button type="button" class="btn btn-outline-success" style="margin-right: 900px;">글쓰기</button></a>
 			</c:if>

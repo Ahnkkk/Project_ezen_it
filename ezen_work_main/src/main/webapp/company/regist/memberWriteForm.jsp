@@ -50,7 +50,20 @@ function checkWrite(){
 		frm.submit();
 	}
 }
+function checkId() {
+	var sId = document.writeForm.id.value;
+		
+	if(!sId) {
+		alert("먼저 아이디를 입력하세요.");
+		document.writeForm.id.focus();
+	} else {
+		window.open("checkId.do?id=" + sId, "",
+					 "width=400 height=100 left=500 top=200");
+	}
+
+}
 </script>
+
 <link rel="stylesheet" href="../css/memberWrite.css">
 </head>
 <body id="JoinMain" class="ALBA join join--new person">
@@ -113,7 +126,6 @@ function checkWrite(){
 								<input type="email" class="chain-input" name="email" value="" placeholder="이메일을 입력하세요" maxlength="20">
 								
 								<select name="email2" class="chain-input">
-									<option value="00">--선택해주세요.-- </option>
 									<option value="naver.com">@ naver.com </option>
 									<option value="gmail.com">@ gmail.com </option>
 									<option value="hanmail.com">@ hanmail.com </option>
@@ -125,7 +137,6 @@ function checkWrite(){
 							<label class="chain-label" for="htel">휴대폰</label>
 							<div class="sign__input-frame">
 								<select name="tel" class="chain-input">
-									<option value="00">--선택해주세요.-- </option>
 									<option value="010">010 </option>
 									<option value="011">011 </option>
 									<option value="016">016 </option>

@@ -229,7 +229,9 @@ button{
 				</div>
 			</div>
 		</div>
+		<c:if test="${memId != null }">
 				<input type="button" class="join-submit-btn join-submit-btn--person" value="지원하기" onclick="checkApply();">
+		</c:if>		
 				<input type="button" class="join-submit-btn join-submit-btn--person" value="뒤로" onclick="location.href='../../main/index.do'">
 		</form>
 		</div>

@@ -31,4 +31,6 @@ public interface CompanyService {
 	public MemberDTO getMember1(String id);
 	//기업 아이디 찾기
 	public String findId(String cname, String email);
+	//회원 비밀번호 찾기
+	public String findPwd(String id, String cname, String email);
 }

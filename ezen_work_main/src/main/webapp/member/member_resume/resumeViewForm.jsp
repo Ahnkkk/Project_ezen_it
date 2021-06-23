@@ -51,7 +51,7 @@ button{
 	<!-- Header -->
 	<div id="Header">
 			<h1 class="headerBi">
-				<a href="../../main/index.jsp"><img src="../images/Ezen_Work.png" class="headerBi__logo" alt="이젠일해요"></a>
+				<a href="../../main/index.do"><img src="../images/Ezen_Work.png" class="headerBi__logo" alt="이젠일해요"></a>
 			</h1>
 		
 			<ul class="headerLink">
@@ -72,6 +72,9 @@ button{
 				</li>		
 				<li class="job">
 					<a href="../member_resume/resumeWriteForm.do">이력서등록</a>	
+				</li>	
+				<li class="story">
+					<a href="../member_apply/memberAdList.do">이력서지원</a>
 				</li>				
 				<li class="story">
 					<a href="../member_modify/memberModifyForm.do">개인정보수정</a>
